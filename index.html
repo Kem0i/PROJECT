@@ -7,13 +7,15 @@
     <title>PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <h1>A PORTFOLIO OF KEMOI</h1>
         <ul>
             <li><a href="#about">About me</a></li>
-            <li><a href="#project"></a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
         </ul>
     </header>
 
@@ -81,29 +83,41 @@
             </section>
         </article>
 
-<article id="project">
-    <h2>My projects</h2>
-    <ul>
-        <li>
-            <h3>HTML project</h3>
-            <p>In this project I used HTML as the main language. It involved me making a website with multiple
-                pages and linking to them and to parts of the page.</p>
-                <a href="https://html1-77hx.onrender.com">HTML project</a>
-        </li>
-        <li>
-            <h3>CSS project</h3>
-            <p>In this project CSS was the main language use with HTML also included. The objective of this
-                project was to teach myself how to style webpages.</p>
-            <a href="https://css2.onrender.com">CSS project</a>
-        </li>
-        <li>
-            <h3>TAILWIND project</h3>
-            <p>Though not a project I was able to learn the use of tailwind as it is more simplified compared to
-                CSS</p>
-                <a href="https://tailwind-work.onrender.com">My Project</a>
-        </li>
-    </ul>
-</article>
+        <article id="project">
+            <h2>My projects</h2>
+            <ul>
+                <li>
+                    <h3>HTML project</h3>
+                    <p>In this project I used HTML as the main language. It involved me making a website with multiple
+                        pages and linking to them and to parts of the page.</p>
+                    <a href="https://html1-77hx.onrender.com">HTML project</a>
+                </li>
+                <li>
+                    <h3>CSS project</h3>
+                    <p>In this project CSS was the main language use with HTML also included. The objective of this
+                        project was to teach myself how to style webpages.</p>
+                    <a href="https://css2.onrender.com">CSS project</a>
+                </li>
+                <li>
+                    <h3>TAILWIND project</h3>
+                    <p>Though not a project I was able to learn the use of tailwind as it is more simplified compared to
+                        CSS</p>
+                    <a href="https://tailwind-work.onrender.com">My Project</a>
+                </li>
+            </ul>
+        </article>
+        <article id="contact-me">
+            <h2 class="position">Contact Me</h2>
+            <form action="">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Your Subject" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message:"
+                    required></textarea>
+            </form>
+            <button>Submit</button>
+        </article>
     </main>
 
     <footer>
