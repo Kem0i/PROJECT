@@ -4,28 +4,28 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 input,
 button,
 textarea {
-    font: inherit;
+  font: inherit;
 }
 
 /* ||VARIABLES */
 :root {
-/* ||FONTS */
---FF: "Chakra Petch", sans-serif;
---FS: clamp(1.5rem, 2.2vh, 1.5rem)
+  /* ||FONTS */
+  --FF: "Chakra Petch", sans-serif;
+  --FS: clamp(1.5rem, 2.2vh, 1.5rem);
 }
 /* ||COLORS */
 
@@ -38,3 +38,25 @@ textarea {
 /* ||MAIN */
 
 /* ||FOOTER */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
