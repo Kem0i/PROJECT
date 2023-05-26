@@ -26,16 +26,112 @@ textarea {
   /* ||FONTS */
   --FF: "Chakra Petch", sans-serif;
   --FS: clamp(1.5rem, 2.2vh, 1.5rem);
+
+  /* ||COLORS */
+  --BACKGROUND: white;
+  --TEXT-COLOR: black;
+  --HEADER-BG: rgb(42, 105, 199);
+  --HEADER-TXT: rgb(223, 198, 198);
+  --BORDER-COLOR: gray;
+  --BUTTON-COLOR: ;
+
+  /* ||BORDERS */
+  --BORDERS: 1px solid var(--BORDER-COLOR);
+  --BORDER-RADIUS: 15px;
 }
-/* ||COLORS */
 
 /* || UTILITY CLASSES */
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
 
 /* ||GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: var(--FS);
+  font-family: var(--FF);
+  background: linear-gradient(to bottom, #ff4242, #ee515193);
+}
+
+body {
+  background-color: var(--BACKGROUND);
+  color: var(--TEXT-COLOR);
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: var(--BORDERS);
+  border-right: var(--BORDERS);
+  box-shadow: 0 0 10px var(--BORDER-COLOR);
+}
+
+p {
+  line-height: 1.5;
+}
+
+a:any-link {
+  cursor: pointer;
+  color: var(--LINK);
+}
+
+a:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+a:active {
+    color: yellow;
+}
 
 /* ||HEADER */
+.header {
+  color: white;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header__ul {
+  background-color: var(--HEADER-BG);
+  color: var(--HEADER-TXT);
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 
 /* ||MAIN */
+
+/* ||HOBBIES */
+.block {
+  max-width: 300px;
+  width: 30vw;
+  max-height: 200px;
+  height: 20vw;
+  background-color: #333;
+  color: white;
+  padding: rem;
+}
+
+.left {
+  float: left;
+  margin-right: 1rem;
+}
+
+.hobbies__ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.project__ul {
+  list-style-type: none;
+  text-decoration: none;
+}
 
 /* ||FOOTER */
 .fa {
